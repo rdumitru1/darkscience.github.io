@@ -7,13 +7,13 @@ body {
 }
 
 a {
-    color: #e0ebf5;
+    color: #3598f5;
     text-decoration: none;
     word-break: break-word;
 }
 
 a:hover {
-    border-bottom: 2px solid #e0ebf5;
+    border-bottom: 2px solid #3598f5;
 }
 
 html, button, input, select, textarea {
@@ -21,13 +21,13 @@ html, button, input, select, textarea {
 }
 
 ::-moz-selection {
-    background: #e0ebf5;
+    background: #3598f5;
     text-shadow: none;
     color: #fff;
 }
 
 ::selection {
-    background: #e0ebf5;
+    background: #3598f5;
     text-shadow: none;
     color: #fff;
 }
@@ -109,7 +109,7 @@ blockquote {
     font-size: 1.1rem;
     font-family: Georgia, bitstream charter, serif;
     border-left: 3px solid;
-    border-color: #e0ebf5;
+    border-color: #3598f5;
     padding-left: 15px;
 }
 
@@ -297,7 +297,7 @@ ul {
 }
 
 .header nav.social a:hover {
-    color: #e0ebf5;
+    color: #3598f5;
 }
 
 .header .site-description nav {
@@ -372,7 +372,7 @@ ul {
 }
 
 .post .draft-label {
-    color: #e0ebf5;
+    color: #3598f5;
     text-decoration: none;
     padding: 2px 4px;
     border-radius: 4px;
@@ -382,10 +382,10 @@ ul {
 
 .post .tags a  {
     display: inline-block; 
-    border: 1px solid #e0ebf5;
+    border: 1px solid #3598f5;
     border-radius: 3px;
     padding: 0px 6px;
-    color: #e0ebf5;
+    color: #3598f5;
     line-height: 20px;
     font-size: 0.85em;
     text-decoration: none;
@@ -411,7 +411,7 @@ ul {
 }
 
 .footer a:hover {
-    color: #e0ebf5;
+    color: #3598f5;
 }
 
 .tag-cloud {
