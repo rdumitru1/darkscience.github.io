@@ -16,7 +16,7 @@ copyright = "© Copyright notice"
 
 	# Optional 64x64 avatar image.
 	# avatar = "https://cdn-icons-png.freepik.com/256/1336/1336583.png?semt=ais"
-	avatar = avatar.png
+	avatar = "img/avatar.png"
 
 	featherIconsCDN = false
 
