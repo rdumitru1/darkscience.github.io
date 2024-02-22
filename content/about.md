@@ -1,0 +1,4 @@
+I started using Linux back in 2009 because I wanted to learn something new and diferrent. I first started using Mageia which was a distro derived from Mandrake.
+At the begginig I've switched often between Linux and Windows, but after I learned the basics it becamed my main OS.
+I used to frequently  switch between distros (distro hopping) but after a wile I stuck with Fedora for 3 years and recently I switched to ArchLinux because of Fedora 6 mounths Release Cycle, and sometimes when I upgraded to a new version I've got some issues.
+ArchLinux is a Rolling Release distribution which it comes with other risks, it's possible that the new released packages to brake your system, but for this I use the btrfs file system with timeshift and everytime I do a system update it automatically takes a system snapshot, and in case of something wrong I can easely get back to a previous snapshot.
