@@ -12,7 +12,7 @@ copyright = "© Copyright notice"
   posts = "/:year/:month/:title"
 
 [params]
-	subtitle = "DevOps cookbook"
+	subtitle = "DevOps LogBook"
 
 	# Optional 64x64 avatar image.
 	avatar = "https://cdn-icons-png.freepik.com/256/7160/7160429.png?semt=ais"
@@ -43,7 +43,7 @@ copyright = "© Copyright notice"
 	]
 
 	# Github base url
-	github = "https://github.com/chollinger93/ink-free"
+	#github = "https://github.com/chollinger93/ink-free"
 
 	# For statistics, we can compare the total word count against a book of your choice
 	statisticsEnabled = true
