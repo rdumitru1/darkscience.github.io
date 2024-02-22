@@ -12,7 +12,7 @@ copyright = "© Copyright notice"
   posts = "/:year/:month/:title"
 
 [params]
-	subtitle = "Crisp, minimal, privacy-conscious personal [blog theme for Hugo](https://github.com/chollinger93/ink-free)"
+	subtitle = "DevOps cookbook"
 
 	# Optional 64x64 avatar image.
 	avatar = "https://cdn-icons-png.freepik.com/256/7160/7160429.png?semt=ais"
