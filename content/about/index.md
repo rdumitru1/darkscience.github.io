@@ -1,4 +1,6 @@
-+++ title = "About" +++
++++
+title = "About"
++++
 
 Welcome to my blog.
 
