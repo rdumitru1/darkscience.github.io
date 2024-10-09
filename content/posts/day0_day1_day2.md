@@ -1,6 +1,6 @@
 +++
 title = 'What is all about Day0, Day1 and Day2'
-date = 2024-10-09T18:21
+date = 2024-10-09T18:21:24+02:00
 draft = false
 +++
 
