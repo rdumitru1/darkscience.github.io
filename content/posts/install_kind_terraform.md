@@ -18,9 +18,8 @@ kind was primarily designed for testing Kubernetes itself, but may be used for l
 
 Configuration files used
 
+***# versions.tf***
 ```
-# versions.tf
-
 terraform {
   required_providers {
     kind = {
@@ -45,9 +44,8 @@ terraform {
   }
 ```
 
+***# variables.tf***
 ```
-# variables.tf
-
 variable "kind_cluster_name" {
   type        = string
   description = "The name of the cluster."
@@ -73,9 +71,8 @@ variable "ingress_nginx_namespace" {
 }
 ```
 
+***# kind_cluster.tf***
 ```
-# kind_cluster.tf
-
 provider "kind" {
 }
 
@@ -117,10 +114,8 @@ resource "kind_cluster" "default" {
 Since we are using **~/.kube/config** for the variable **kind_cluster_config_path** value, pathexpand is used to take a filesystem path that might begin with a ~ segment, and replace that segment with the current user's home directory path.
 If **pathexpand** would not be used it will literally write it out to **~/.kube/config** within the current working directory.
 
-
+***# nginx_ingress.tf***
 ```
-# nginx_ingress.tf
-
 provider "helm" {
   kubernetes {
     config_path = pathexpand(var.kind_cluster_config_path)
@@ -162,9 +157,8 @@ resource "null_resource" "wait_for_ingress_nginx" {
 This **values = [file("nginx_ingress_values.yaml")]** line was added because if you want nginx ingress to work with kind a bit of extra configuration is needed.
 The **null_resource** waits that pods with the label **app.kubernetes.io/component=controller** in the nginx ingress are running, and it time's out after 90 seconds.
 
+***# nginx_ingress_values.yaml***
 ```
-# nginx_ingress_values.yaml
-
 controller:
   hostPort:
     enabled: true
@@ -186,3 +180,7 @@ controller:
   extraArgs:
     publish-status-address: "localhost"
 ```
+
+**Usage**
+Run **terraform apply**
+Deploy a test app to verify that ingress works kubectl **apply -f https://kind.sigs.k8s.io/examples/ingress/usage.yaml**
