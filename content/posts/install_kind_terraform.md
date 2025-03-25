@@ -180,6 +180,13 @@ controller:
   extraArgs:
     publish-status-address: "localhost"
 ```
+<br>
+
+**For those who use Colima on Mac**
+<br>
+
+You need to first stop colima ***colima stop*** and then start it again using ***colima start --network-address*** and then ***sudo ssh -F ~/.colima/ssh_config colima -L 80:172.18.0.3:80 -L 443:172.18.0.3:443***
+
 
 **Usage**
 Run **terraform apply**
